@@ -2,7 +2,6 @@
 
 *Real-time satellite lookup and tracking with ~800 pre-searched objects across 5 categories.*
 
-
 ## Overview
 
 SPACEAPP lets you browse curated satellites and pull real-time data with one click. It’s designed for fast lookup, learning, and light tracking — not heavy analytics.
