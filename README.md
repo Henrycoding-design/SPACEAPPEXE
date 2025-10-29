@@ -63,7 +63,7 @@ For each satellite, SPACEAPP can show (where available):
 
 Pick the mode that fits your needs. Efficient Mode reduces API pressure; Non-efficient prioritizes responsiveness.
 
-**Sats (N)**	**Mode**	        **Interval**	**Time to 1k/hr**
+**Sats (N)** |	**Mode**	   |     **Interval**	| **Time to 1k/hr**
 9	            Efficient	             8 s	        ~14.8 min
 7	            Efficient	             8 s	        ~19.0 min
 7	            Non-efficient	         3 s	        ~7.0 min
