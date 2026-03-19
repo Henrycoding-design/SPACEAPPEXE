@@ -1,133 +1,195 @@
-# SPACEAPP v3.0/v4.0/v4.2 — End-User Guide (README)
+# 🛰️ SPACEAPP — General README (v3.0 → v5.x)
 
-*Real-time satellite lookup and tracking with ~800 pre-searched objects across 5 categories.*
+*Real-time satellite lookup and tracking platform evolving from lightweight lookup (v3.0) to a scalable, cloud-powered tracking system (v5.x).*
 
-## Overview
+---
 
-SPACEAPP lets you browse curated satellites and pull real-time data with one click. It’s designed for fast lookup, learning, and light tracking — not heavy analytics.
+## 📦 Version Status
 
-Curated list (~800 satellites) across 5 categories:
+* 🧓 **v3.0** — *Retired (2025)*
+* 🗂️ **v4.0 / v4.2** — *Legacy (service extended to May)*
+* 🚀 **v5.x Series (Current)**
 
-* Special, Starlink, Science, Weather, GPS
+  * v5.0 — Stable foundation
+  * v5.0-beta-x — Experimental builds
+  * v5.5.x — Latest stable releases
 
-* One-click details: pick a category → pick a satellite → see live data (or use the search bar to search for satellite names that are already in DB)
+---
 
-* Manual search by NORAD ID for satellites outside the curated set
+## 🌌 Overview
 
-* Two API modes to balance speed vs. efficiency (for v4.0 above only, see table below)
+SPACEAPP is designed for **fast satellite lookup, learning, and real-time tracking**, evolving across versions:
 
+### 🔹 Core Features (All Versions)
 
-## Setup
+* Curated satellite list (~800 objects across 5 categories):
 
-1. Go to [n2yo.com](https://www.n2yo.com/) and Sign Up to get the API Key (the Code at the end of the user information page)
+  * Special, Starlink, Science, Weather, GPS
+* One-click satellite lookup
+* Manual search via NORAD ID
+* Live satellite data (position, speed, orbit, etc.)
+* Two API modes (Efficient vs Non-efficient)
 
-2. Open the app -> Go to Signup and past the API Key where prompted
+---
 
-3. When the Signup is complete, you can now just Login with your username and password and use the app without pasting the API Key again.
+### 🚀 v5.5 Enhancements (Major Upgrade)
 
-* The same process apply for other accounts, you can easily switch between API Keys just by Loging In and Out.
+* **🔍 Name-Based Lookup** — Search satellites instantly by name
+* **☁️ Supabase Pre-Indexed Database** — Faster, smarter, scalable search (10× larger dataset)
+* **🌍 `near:` Advanced Sky Search** — Query satellites from any location on Earth
+* **📡 Satellite Path Prediction** — Visualize orbital paths + history
+* **⚡ Smart API Reduction** — ~25% fewer API calls (adaptive logic)
+* **📢 Check Info System** — In-app messages for updates, surveys, announcements
+* **💻 x64 Installer** — Clean install experience (no more raw EXE ZIP)
 
+---
 
-## Quick Start (After setup)
+## ⚙️ Setup
 
-1. Open the app.
+1. Go to https://www.n2yo.com/ and sign up
+2. Copy your **API Key** (called *Developer / License Key* usually at the end of the [page](https://www.n2yo.com/login/edit/))
+3. Open SPACEAPP → Signup → paste API key
+4. Login and start using the app
 
-2. Choose a category (e.g., Science). A short description and a list of satellites will appear.
+✔ Multiple accounts supported
+✔ Easy API key switching via login/logout
 
-3. Click a satellite name to fetch and display live information.
+---
 
-4. Not in the list? Paste its NORAD ID into the search bar and hit Search.
+## ⚡ Quick Start
 
-5. Tooltips / (?) icons in the app explain fields as you hover.
+1. Open the app
+2. Choose a category (e.g., Science)
+3. Click a satellite → view live data
+4. Or search by:
 
+   * Name (v5.x)
+   * NORAD ID
+5. Hover (?) icons for explanations
 
-## What Data You’ll See
+---
 
-For each satellite, SPACEAPP can show (where available):
+## 🌍 Location Behavior (v5.x)
+
+* Location is estimated via IP
+* Cached during session
+* Restart app to refresh location
+* VPN may affect accuracy
+
+---
+
+## 🗄️ Satellite Database
+
+### ☁️ Cloud Database (v5.x)
+
+* Pre-indexed via Supabase
+* Auto-updated
+* Handles aliases + edge cases
+
+### 💾 Local Database
+
+* Used for offline + core features
+* Periodic updates recommended
+
+⚠️ Do not interrupt updates — may corrupt data
+
+---
+
+## 📊 What Data You’ll See
 
 * Name & NORAD ID
-
-* Position (live)
-
-* Orbit / TLE (raw)
-
+* Live Position
+* Orbit / TLE
+* Orbital Path (v5.x)
 * Speed
-
 * Estimated time in space
 
-* Additional field help is shown via the in-app tooltip / (?) icons.
+---
 
+## 🔁 API Modes (Polling System)
 
-## API Modes (Polling Interval)
-* Please note that this section is just for SPACEAPP v4.0 and v4.2, v3.0 users can skip.
+Choose based on performance vs API usage:
 
-Pick the mode that fits your needs. Efficient Mode reduces API pressure; Non-efficient prioritizes responsiveness.
+### ⚡ Efficient Mode
 
-| **Sats (N)** | **Mode**         | **Interval** | **Time to 1k/hr** |
-|:-------------:|:----------------:|:-------------:|:------------------:|
-| 9             | Efficient        | 8 s           | ~14.8 min          |
-| 7             | Efficient        | 8 s           | ~19.0 min          |
-| 7             | Non-efficient    | 3 s           | ~7.0 min           |
-| 8             | Efficient        | 8 s           | ~16.7 min          |
-| 8             | Non-efficient    | 3 s           | ~6.0 min           |
-| 10            | Efficient        | 8 s           | ~13.3 min          |
-| 10            | Non-efficient    | 3 s           | ~5.0 min           |
+* Slower updates
+* Lower API usage
 
-**Recommendations**
+### 🚀 Non-Efficient Mode
 
-Use Efficient (8s) for normal browsing or low bandwidth.
+* Faster updates
+* Higher API usage
 
-Switch to Non-efficient (~3s) when you need faster refresh and accept higher API usage.
+---
 
+### 🧠 v5.5 Smart Optimization
 
-## Tips for Best Results
+* Starlink (LEO): normal updates
+* Non-Starlink (MEO/GEO): updates every other cycle
 
-Prefer the curated categories first; they’re pre-checked for quality.
+➡️ ~25% API reduction on average
 
-When searching by NORAD ID, copy it carefully from a reliable source.
+---
 
-If requests fail repeatedly, switch to Efficient mode / check Network connection / API limit and try again.
+## 💡 Tips for Best Results
 
+* Use curated categories first
+* Double-check NORAD IDs
+* Use Efficient mode for long sessions
+* Keep database updated
+* Watch for in-app announcements (v5.x)
 
-## Troubleshooting
+---
 
-No data / errors when clicking a satellite
+## 🛠️ Troubleshooting
 
-* Check your internet and try Efficient mode.
+**No data / errors**
 
-* Update the satellite database if prompted.
+* Check internet
+* Switch API mode
+* Update database
 
-App froze during update / first run
+**App freeze during update**
 
-* Wait a minute; if it doesn’t recover, restart the app.
+* Wait → restart if needed
+* Reinstall if corrupted
 
-* If corruption is suspected, reinstall may be required.
+**Search returns nothing**
 
-Search returns nothing
+* Check spelling / NORAD ID
+* Satellite may be inactive or renamed
 
-* Confirm the NORAD ID (typos are common).
+---
 
-* That satellite may have decayed or changed identifiers.
+## 🔒 Privacy
 
+SPACEAPP uses public satellite data APIs.
+**No personal data is collected beyond required functionality.**
 
-## Privacy
+---
 
-SPACEAPP queries public satellite data sources. It **does not collect personal information beyond what is required for normal operation.**
+## 📬 Support
 
+Contact: *[tanbinhvo.hcm@gmail.com](mailto:tanbinhvo.hcm@gmail.com)*
 
-## Support & Contact
+---
 
-Questions, feedback, or bug reports: *tanbinhvo.hcm@gmail.com*
+## 👤 Credits
 
+Vo Tan Binh (Henry Vo) — Sole developer of SPACEAPP
 
-## Credits
+---
 
-Vo Tan Binh (aka Henry Vo) — Original and solo developer of the entire system.
+## © License
 
+© Vo Tan Binh. All rights reserved.
+Unauthorized redistribution or reuse is prohibited unless permitted by the author.
 
-## Copyright / License
+---
 
-*© Vo Tan Binh. All rights reserved.*
-*This software and its assets are protected by copyright. Redistribution or reuse of code, artwork, or data without permission is prohibited unless explicitly allowed by the author.*
+## 🧾 Notes
 
-## Most features are self-explained in the interface; this README only highlights key behaviors and safe-use notes. Enjoy exploring the sky with SPACEAPP!
+Most features are self-explained in the interface.
+This README highlights key behaviors and safe-use guidelines.
+
+🚀 *Enjoy exploring the sky with SPACEAPP — from v3 roots to v5 scalability.*
