@@ -182,8 +182,17 @@ Vo Tan Binh (Henry Vo) — Sole developer of SPACEAPP
 
 ## © License
 
-© Vo Tan Binh. All rights reserved.
+© Vo Tan Binh / SPACEAPP. All rights reserved.
 Unauthorized redistribution or reuse is prohibited unless permitted by the author.
+
+---
+
+## 🛰️ Open Source v3.0
+
+The original public release, SPACEAPP Open Source v3.0, is available separately under the MIT License.
+
+Repository:
+[INSERT OPEN SOURCE GITHUB REPO LINK HERE](https://github.com/Henrycoding-design/SpaceappwebOpenSrc)
 
 ---
 
