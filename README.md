@@ -194,6 +194,8 @@ The original public release, SPACEAPP Open Source v3.0, is available separately 
 Repository:
 https://github.com/Henrycoding-design/SpaceappwebOpenSrc
 
+This applies only to **SPACEAPP v3.0**.
+
 ---
 
 ## 🧾 Notes
