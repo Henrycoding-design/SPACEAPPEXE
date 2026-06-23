@@ -1,206 +1,484 @@
-# 🛰️ SPACEAPP — General README (v3.0 → v5.x)
+# SPACEAPP v5.6
 
-*Real-time satellite lookup and tracking platform evolving from lightweight lookup (v3.0) to a scalable, cloud-powered tracking system (v5.x).*
-
----
-
-## 📦 Version Status
-
-* 🧓 **v3.0** — *Retired (2025)*
-* 🗂️ **v4.0 / v4.2** — *Legacy (service extended to May)*
-* 🚀 **v5.x Series (Current)**
-
-  * v5.0 — Stable foundation
-  * v5.0-beta-x — Experimental builds
-  * v5.5.x — Latest stable releases
+*Real-time satellite tracking, mission intelligence, orbital analysis, and spacecraft visualization.*
 
 ---
 
-## 🌌 Overview
+# Overview
 
-SPACEAPP is designed for **fast satellite lookup, learning, and real-time tracking**, evolving across versions:
+SPACEAPP is a desktop application designed for satellite tracking, mission exploration, and space education. It combines live orbital data, advanced search capabilities, AI-assisted mission intelligence, and interactive spacecraft visualization into a unified platform.
 
-### 🔹 Core Features (All Versions)
-
-* Curated satellite list (~800 objects across 5 categories):
-
-  * Special, Starlink, Science, Weather, GPS
-* One-click satellite lookup
-* Manual search via NORAD ID
-* Live satellite data (position, speed, orbit, etc.)
-* Two API modes (Efficient vs Non-efficient)
+Whether you're monitoring Starlink satellites, researching scientific missions, exploring orbital mechanics, or tracking the International Space Station, SPACEAPP provides a streamlined environment for understanding humanity's activity in space.
 
 ---
 
-### 🚀 v5.5 Enhancements (Major Upgrade)
+# What's New in v5.6
 
-* **🔍 Name-Based Lookup** — Search satellites instantly by name
-* **☁️ Supabase Pre-Indexed Database** — Faster, smarter, scalable search (10× larger dataset)
-* **🌍 `near:` Advanced Sky Search** — Query satellites from any location on Earth
-* **📡 Satellite Path Prediction** — Visualize orbital paths + history
-* **⚡ Smart API Reduction** — ~25% fewer API calls (adaptive logic)
-* **📢 Check Info System** — In-app messages for updates, surveys, announcements
-* **💻 x64 Installer** — Clean install experience (no more raw EXE ZIP)
+## 🎮 Interactive 3D Spacecraft Models
 
----
+SPACEAPP now includes integrated 3D spacecraft visualization.
 
-## ⚙️ Setup
+Currently supported:
 
-1. Go to https://www.n2yo.com/ and sign up
-2. Copy your **API Key** (called *Developer / License Key* usually at the end of the [page](https://www.n2yo.com/login/edit/))
-3. Open SPACEAPP → Signup → paste API key
-4. Login and start using the app
+* Starlink
+* GPS Satellites
+* Weather Satellites
+* Science Satellites
+* International Space Station (ISS)
+* Tiangong Space Station
+* James Webb Space Telescope
+* Hubble Space Telescope
 
-✔ Multiple accounts supported
-✔ Easy API key switching via login/logout
+Users can inspect spacecraft structure and appearance while viewing mission information and tracking data.
 
 ---
 
-## ⚡ Quick Start
+## 🧠 Mission Intelligence
 
-1. Open the app
-2. Choose a category (e.g., Science)
-3. Click a satellite → view live data
-4. Or search by:
+Supported spacecraft now include AI-assisted mission overviews.
 
-   * Name (v5.x)
-   * NORAD ID
-5. Hover (?) icons for explanations
+Mission Intelligence helps users understand:
 
----
+* Mission objectives
+* Scientific contributions
+* Historical significance
+* Technology highlights
+* Operational purpose
 
-## 🌍 Location Behavior (v5.x)
-
-* Location is estimated via IP
-* Cached during session
-* Restart app to refresh location
-* VPN may affect accuracy
+Designed to transform technical satellite data into accessible educational content.
 
 ---
 
-## 🗄️ Satellite Database
+## 🌍 Orbital Geometry Analysis
 
-### ☁️ Cloud Database (v5.x)
+Explore orbital characteristics beyond basic tracking information.
 
-* Pre-indexed via Supabase
-* Auto-updated
-* Handles aliases + edge cases
+Available analysis may include:
 
-### 💾 Local Database
-
-* Used for offline + core features
-* Periodic updates recommended
-
-⚠️ Do not interrupt updates — may corrupt data
+* Orbit classification
+* Orbital inclination
+* Altitude range
+* Orbital period
+* Ground-track behavior
+* Mission-specific orbital characteristics
 
 ---
 
-## 📊 What Data You’ll See
+## 📡 Coverage Radius Analysis
 
-* Name & NORAD ID
+Visualize the estimated area a spacecraft can observe, serve, or communicate with from its current orbit.
+
+Available information may include:
+
+- Coverage radius
+- Ground footprint size
+- Orbital visibility range
+- Coverage characteristics
+
+Coverage estimates are calculated using orbital altitude and geometric analysis.
+
+---
+
+## ⏳ Lifespan Analysis
+
+View operational history and mission longevity information.
+
+Supported spacecraft may include:
+
+* Time spent in orbit
+* Original mission duration
+* Mission extensions
+* Current operational phase
+* Estimated service lifespan
+
+---
+
+## 📚 RAG + Web Search Mission Profiles
+
+Mission profiles are now powered by Retrieval-Augmented Generation (RAG) and web-backed research systems.
+
+Available information may include:
+
+* Launch date
+* Operator
+* Country
+* Mission description
+* Operational status
+* Days in space
+* Estimated completed orbits
+
+This system helps provide more detailed and up-to-date spacecraft information.
+
+---
+
+## 🔬 Research View
+
+A new information-rich mode designed for deeper spacecraft exploration.
+
+Research View provides expanded access to:
+
+* Mission profiles
+* Orbital analysis
+* Capability assessments
+* Lifespan information
+* Mission intelligence
+
+---
+
+## 🎨 UI Enhancements
+
+SPACEAPP v5.6 introduces a refreshed workspace experience.
+
+Improvements include:
+
+* Dynamic splitter layouts
+* Resizable panels
+* Improved visual organization
+* Expanded iconography
+* Better information presentation
+
+Users now have greater control over how information is displayed throughout the application.
+
+---
+
+# Core Features
+
+## 🛰️ Real-Time Tracking
+
+Monitor satellites and spacecraft using live orbital data.
+
+Features include:
+
+* Live position tracking
+* Multi-satellite monitoring
+* Speed information
+* Altitude information
+* Ground-track visualization
+
+---
+
+## 🛰️ Satellite Path Prediction
+
+Visualize:
+
+* Future orbital trajectories
+* Predicted satellite positions
+* Historical satellite positions
+* Ground-track paths
+
+---
+
+## ⚡ Smart API Optimization
+
+SPACEAPP automatically reduces API usage while maintaining a smooth tracking experience.
+
+Benefits:
+
+* Reduced API consumption
+* Longer monitoring sessions
+* Improved efficiency
+* Lower network usage
+
+Depending on usage patterns, API consumption may be reduced by approximately 25% or more.
+
+---
+
+## 🔎 Advanced Search System
+
+Find satellites quickly using multiple search methods.
+
+Supported methods:
+
+* Name-based search
+* Alias-aware searching
+* Category browsing
+* Global visibility searches
+* NORAD ID lookup
+
+### Advanced Sky Search (`near:`)
+
+Search for satellites visible from virtually anywhere on Earth.
+
+Example:
+
+```text
+near: Tokyo, Japan; radius: 45
+```
+
+Supported parameters:
+
+```text
+near: <place or coordinates>;
+alt: <altitude>;
+radius: <0-90>;
+catid: <satellite category ID>;
+```
+
+If optional parameters are omitted, SPACEAPP uses your current values.
+
+---
+
+## 🗄️ Supabase Search Infrastructure
+
+Satellite data is pre-indexed and synchronized through Supabase.
+
+Benefits include:
+
+* Faster searches
+* Alias support
+* Improved reliability
+* Background synchronization
+* Support for larger databases
+
+---
+
+## 📂 Category Browsing
+
+Explore curated satellite collections including:
+
+* Special
+* Starlink
+* Science
+* Weather
+* GPS
+
+Additional categories may be added through future updates.
+
+---
+
+## 🆔 NORAD Search
+
+Search directly using NORAD catalog numbers.
+
+Useful for:
+
+* Research
+* Tracking specific spacecraft
+* Accessing satellites outside curated categories
+
+---
+
+## 📄 TLE Viewing
+
+Inspect raw Two-Line Element (TLE) data used for orbital calculations and tracking.
+
+Available for supported satellites.
+
+---
+
+## 📢 Check Info System
+
+SPACEAPP can connect to the official GitHub update server and display:
+
+* Release notifications
+* Surveys
+* Community announcements
+* Important developer messages
+
+---
+
+## 💻 Custom Installer
+
+SPACEAPP includes a dedicated Windows x64 installer.
+
+Benefits:
+
+* Simplified installation
+* Custom installation paths
+* Cleaner upgrades
+* Improved maintainability
+
+---
+
+# Setup
+
+## Step 1 — Obtain an API Key
+
+Create an account with N2YO and obtain an API key.
+
+## Step 2 — Initial Setup
+
+1. Launch SPACEAPP
+2. Select **Signup**
+3. Enter your API key
+4. Complete account creation
+
+The setup wizard automatically appears during first launch.
+
+## Step 3 — Login
+
+1. Enter your username
+2. Enter your password
+3. Begin exploring
+
+Your API key only needs to be entered once.
+
+---
+
+# Quick Start
+
+## Tracking a Satellite
+
+1. Launch SPACEAPP
+2. Select a category
+3. Choose a satellite
+4. View real-time tracking information
+
+## Searching by NORAD ID
+
+1. Enter a NORAD ID
+2. Press **Search**
+3. Review available tracking information
+
+## Exploring Research Features
+
+1. Open a supported spacecraft
+2. Switch to **Research View**
+3. Explore mission and orbital information
+
+---
+
+# Satellite Database
+
+Satellite information changes over time as missions launch, evolve, and conclude.
+
+## Supabase Database
+
+Cloud-hosted and automatically maintained.
+
+Features:
+
+* Pre-indexed searches
+* Alias support
+* Synchronization
+* Search optimization
+
+## Local Database
+
+Stored on your device for fast access.
+
+SPACEAPP may occasionally recommend updates to maintain:
+
+* Tracking accuracy
+* Search accuracy
+* Satellite metadata
+* Operational status information
+
+> [!NOTE]
+> Database updates are recommended for the best experience.
+
+> [!IMPORTANT]
+> During setup or database updates, avoid closing the application or interrupting the process. Unexpected interruptions may corrupt local data and require recovery or reinstallation.
+
+---
+
+# Location Notice
+
+SPACEAPP estimates your location using your public IP address.
+
+Important notes:
+
+* VPN usage may reduce accuracy
+* Location data remains cached until the application closes
+* Switching accounts does not refresh location information
+
+If your location changes significantly:
+
+1. Close SPACEAPP
+2. Reopen the application
+
+---
+
+# Available Information
+
+Depending on availability, SPACEAPP may display:
+
+* Satellite Name
+* NORAD ID
 * Live Position
-* Orbit / TLE
-* Orbital Path (v5.x)
 * Speed
-* Estimated time in space
+* Altitude
+* Ground Track
+* Orbital Path
+* TLE Data
+* Launch Date
+* Operator
+* Country
+* Mission Description
+* Operational Status
+* Days in Space
+* Estimated Orbits Completed
+* Mission Capabilities
+* Lifespan Information
+* Orbital Geometry Analysis
+* Mission Intelligence Summary
+* Interactive 3D Models
 
 ---
 
-## 🔁 API Modes (Polling System)
+# API Modes
 
-Choose based on performance vs API usage:
+SPACEAPP includes smart API-saving technology that automatically reduces calls for non-Starlink satellites.
 
-### ⚡ Efficient Mode
+| Satellite Type    | Mode          | Base Interval | Effective Update Rate              |
+| ----------------- | ------------- | ------------- | ---------------------------------- |
+| Starlink Only     | Efficient     | 8 s           | Every 8 s                          |
+| Starlink Only     | Non-Efficient | 3 s           | Every 3 s                          |
+| Non-Starlink Only | Efficient     | 8 s           | Every 16 s                         |
+| Non-Starlink Only | Non-Efficient | 3 s           | Every 6 s                          |
+| Mixed (Equal)     | Efficient     | 8 s           | Starlink: 8 s / Non-Starlink: 16 s |
+| Mixed (Equal)     | Non-Efficient | 3 s           | Starlink: 3 s / Non-Starlink: 6 s  |
 
-* Slower updates
-* Lower API usage
+### Recommendations
 
-### 🚀 Non-Efficient Mode
+**Efficient Mode**
 
-* Faster updates
-* Higher API usage
+Recommended for:
 
----
+* Daily use
+* Long monitoring sessions
+* Reduced API consumption
 
-### 🧠 v5.5 Smart Optimization
+**Non-Efficient Mode**
 
-* Starlink (LEO): normal updates
-* Non-Starlink (MEO/GEO): updates every other cycle
+Recommended for:
 
-➡️ ~25% API reduction on average
-
----
-
-## 💡 Tips for Best Results
-
-* Use curated categories first
-* Double-check NORAD IDs
-* Use Efficient mode for long sessions
-* Keep database updated
-* Watch for in-app announcements (v5.x)
+* Faster refresh rates
+* Short-term monitoring
+* Situations where API usage is less important
 
 ---
 
-## 🛠️ Troubleshooting
+# Privacy
 
-**No data / errors**
+SPACEAPP uses publicly available satellite and mission data sources.
 
-* Check internet
-* Switch API mode
-* Update database
+No personal information is collected beyond what is required for normal application operation.
 
-**App freeze during update**
-
-* Wait → restart if needed
-* Reinstall if corrupted
-
-**Search returns nothing**
-
-* Check spelling / NORAD ID
-* Satellite may be inactive or renamed
+Location estimates are used solely to support tracking and visibility calculations.
 
 ---
 
-## 🔒 Privacy
+# Support
 
-SPACEAPP uses public satellite data APIs.
-**No personal data is collected beyond required functionality.**
+**Email:** [tanbinhvo.hcm@gmail.com](mailto:tanbinhvo.hcm@gmail.com)
 
----
-
-## 📬 Support
-
-Contact: *[tanbinhvo.hcm@gmail.com](mailto:tanbinhvo.hcm@gmail.com)*
+Questions, bug reports, feedback, and feature suggestions are welcome.
 
 ---
 
-## 👤 Credits
+# Credits
 
-Vo Tan Binh (Henry Vo) — Sole developer of SPACEAPP
+**Vo Tan Binh (Henry Vo)**
 
----
-
-## © License
-
-© Vo Tan Binh / SPACEAPP. All rights reserved.
-Unauthorized redistribution or reuse is prohibited unless permitted by the author.
+Creator and Lead Developer of SPACEAPP.
 
 ---
 
-## 🛰️ Open Source v3.0
+# Copyright & License
 
-The original public release, SPACEAPP Open Source v3.0, is available separately under the MIT License.
+© Vo Tan Binh. All rights reserved.
 
-Repository:
-https://github.com/Henrycoding-design/SpaceappwebOpenSrc
+This software and its associated assets, models, artwork, databases, and source code are protected by copyright.
 
-This applies only to **SPACEAPP v3.0**.
-
----
-
-## 🧾 Notes
-
-Most features are self-explained in the interface.
-This README highlights key behaviors and safe-use guidelines.
-
-🚀 *Enjoy exploring the sky with SPACEAPP — from v3 roots to v5 scalability.*
+Redistribution or reuse without explicit permission from the author is prohibited.
