@@ -1,5 +1,5 @@
 
-<img src="ui/images/APPICON.png" alt="SPACEAPP Logo" width="100%" style="max-width: 1000px;" />
+<img src="./APPICON.png" alt="SPACEAPP Logo" width="100%" style="max-width: 1000px;" />
 
 [![Version](https://img.shields.io/github/v/release/Henrycoding-design/SPACEAPPEXE?style=for-the-badge&label=version)](https://github.com/Henrycoding-design/SPACEAPPEXE/releases)
 [![GitHub Stars](https://img.shields.io/github/stars/Henrycoding-design/SPACEAPPEXE?style=for-the-badge)](https://github.com/Henrycoding-design/SPACEAPPEXE/stargazers)
