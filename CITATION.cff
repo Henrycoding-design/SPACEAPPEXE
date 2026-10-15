@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use SPACEAPP in your research, teaching, software, or publications, please cite it using the metadata below."
+
+title: "SPACEAPP"
+version: "5.6.6"
+
+authors:
+  - family-names: "Vo"
+    given-names: "Tan Binh"
+    alias: "Henry Vo"
+
+repository-code: "https://github.com/Henrycoding-design/SPACEAPP"
+
+license: "Apache-2.0"
+
+abstract: >
+  SPACEAPP is a cross-platform desktop application for real-time satellite
+  tracking, mission intelligence, orbital geometry analysis, interactive
+  spacecraft visualization, and AI-assisted spacecraft research.
+
+keywords:
+  - satellite tracking
+  - orbital mechanics
+  - spacecraft
+  - astronomy
+  - space education
+  - PyQt6
+  - SGP4
+  - visualization
+  - AI
+  - RAG
+
+preferred-citation:
+  type: software
+  authors:
+    - family-names: "Vo"
+      given-names: "Tan Binh"
+  title: "SPACEAPP"
+  version: "5.6.6"
+  year: 2026
