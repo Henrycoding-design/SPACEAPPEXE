@@ -108,25 +108,25 @@ Perform detailed mathematical and geometric assessments of spacecraft paths and 
 
 - **Orbital Geometry Analysis:** Explore orbit classification, orbital inclination, altitude range, orbital period, ground-track behavior, and mission-specific characteristics.
 
-- **Coverage & Footprint Metrics (Enhanced in v5.6.5):** Evaluates the geometric footprint on Earth's surface enabled by the satellite's angular subtense (\(\theta\)).
+- **Coverage & Footprint Metrics (Enhanced in v5.6.5):** Evaluates the geometric footprint on Earth's surface enabled by the satellite's angular subtense ($\theta$).
 
-- **Footprint Radius (\(R_{\text{cov}}\)):** Ground coverage radius projected along Earth's curvature:
+- **Footprint Radius ($R_{\text{cov}}$):** Ground coverage radius projected along Earth's curvature:
 
-  \[
+```math
   R_{\text{cov}} = \theta \cdot R_e
-  \]
+```
 
 - **Footprint Surface Area:** Calculates the physical ground area visible using spherical cap geometry:
 
-  \[
+```math
   A = 2 \cdot \pi \cdot R_e^2 \cdot (1 - \cos(\theta))
-  \]
+```
 
 - **Percentage Earth Coverage:** Determines the fraction of total global surface area within line-of-sight:
 
-  \[
+```math
   \text{Coverage Percentage} = \frac{1 - \cos(\theta)}{2}
-  \]
+```
 
 - **Lifespan Analysis:** View operational history and mission longevity information, including time spent in orbit, original mission duration, mission extensions, and estimated service lifespan.
 
